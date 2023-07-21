@@ -5,6 +5,7 @@ import { useState } from "react"
 
 function App() {
   const [time, setTime] = useState({ ms: 0, s: 0, m: 0, h: 0 })
+  console.log("time=", time.h)
   return (
     <div className="main-section">
       <div className="clock-holder">
