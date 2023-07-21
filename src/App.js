@@ -2,8 +2,10 @@ import "./App.css"
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
+    <div className="main-section">
+      <div className="clock-holder">
+        <div className="stopwatch"></div>
+      </div>
     </div>
   )
 }
