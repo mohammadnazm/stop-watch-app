@@ -1,4 +1,4 @@
-function BtnComponent({ props }) {
+function BtnComponent(props) {
   return (
     <div className="main-section">
       <span>{props.time.h}</span>&nbsp;&nbsp;
