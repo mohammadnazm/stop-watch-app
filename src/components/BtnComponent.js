@@ -1,4 +1,4 @@
-function DisplayComponent() {
+function BtnComponent() {
   return (
     <div className="main-section">
       <div className="clock-holder">
@@ -8,4 +8,4 @@ function DisplayComponent() {
   )
 }
 
-export default DisplayComponent
+export default BtnComponent
