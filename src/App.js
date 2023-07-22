@@ -1,23 +1,26 @@
-import "./App.css"
+import React, { useState } from "react"
 import DisplayComponent from "./components/DisplayComponent"
 import BtnComponent from "./components/BtnComponent"
-import { useState } from "react"
+import "./App.css"
 
 function App() {
   const [time, setTime] = useState({ ms: 0, s: 0, m: 0, h: 0 })
   const [interv, setInterv] = useState()
   const [status, setStatus] = useState(0)
+  // Not started = 0
+  // started = 1
+  // stopped = 2
+
+  const start = () => {
+    run()
+    setStatus(1)
+    setInterv(setInterval(run, 10))
+  }
 
   var updatedMs = time.ms,
     updatedS = time.s,
     updatedM = time.m,
     updatedH = time.h
-
-  const start = () => {
-    console.log("start")
-    run()
-    setInterv(setInterval(run, 10))
-  }
 
   const run = () => {
     if (updatedM === 60) {
