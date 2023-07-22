@@ -5,12 +5,16 @@ import { useState } from "react"
 
 function App() {
   const [time, setTime] = useState({ ms: 0, s: 0, m: 0, h: 0 })
-  const start = () => console.log("Hello")
 
   var updatedMs = time.ms,
     updatedS = time.s,
     updatedM = time.m,
     updatedH = time.h
+
+  const start = () => {
+    run()
+    setInterval(run, 10)
+  }
 
   const run = () => {
     if (updatedM === 60) {
