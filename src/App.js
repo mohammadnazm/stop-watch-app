@@ -25,6 +25,8 @@ function App() {
       updateS++
       updateMs = 0
     }
+    updateMs++
+    return setTime({ ms: 0, s: 0, m: 0, h: 0 })
   }
 
   return (
