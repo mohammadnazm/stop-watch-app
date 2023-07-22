@@ -52,7 +52,12 @@ function App() {
       <div className="clock-holder">
         <div className="stopwatch">
           <DisplayComponent time={time} />
-          <BtnComponent status={status} stop={stop} start={start} />
+          <BtnComponent
+            reset={reset}
+            status={status}
+            stop={stop}
+            start={start}
+          />
         </div>
       </div>
     </div>
