@@ -23,7 +23,7 @@ function BtnComponent(props) {
           </button>
           <button
             className="stopwatch-btn stopwatch-btn-yel"
-            onClick={props.start}
+            onClick={props.reset}
           >
             Reset
           </button>
