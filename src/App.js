@@ -5,6 +5,8 @@ import { useState } from "react"
 
 function App() {
   const [time, setTime] = useState({ ms: 0, s: 0, m: 0, h: 0 })
+  const [interv, setInterv] = useState()
+  const [status, setStatus] = useState(0)
 
   var updatedMs = time.ms,
     updatedS = time.s,
@@ -13,7 +15,7 @@ function App() {
 
   const start = () => {
     run()
-    setInterval(run, 10)
+    setInterv(setInterval(run, 10))
   }
 
   const run = () => {
