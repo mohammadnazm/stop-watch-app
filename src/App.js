@@ -14,6 +14,7 @@ function App() {
     updatedH = time.h
 
   const start = () => {
+    console.log("start")
     run()
     setInterv(setInterval(run, 10))
   }
