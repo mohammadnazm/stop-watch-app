@@ -47,6 +47,8 @@ function App() {
     setTime({ ms: 0, s: 0, m: 0, h: 0 })
   }
 
+  const resume = () => start()
+
   return (
     <div className="main-section">
       <div className="clock-holder">
@@ -55,6 +57,7 @@ function App() {
           <BtnComponent
             reset={reset}
             status={status}
+            resume={resume}
             stop={stop}
             start={start}
           />
