@@ -6,7 +6,7 @@ import "./App.css"
 function App() {
   const [time, setTime] = useState({ ms: 0, s: 0, m: 0, h: 0 })
   const [interv, setInterv] = useState()
-  const [status, setStatus] = useState(0)
+  const [status, setStatus] = useState(1)
 
   const start = () => {
     run()
@@ -36,12 +36,17 @@ function App() {
     return setTime({ ms: updatedMs, s: updatedS, m: updatedM, h: updatedH })
   }
 
+  const stop = () => {
+    clearInterval(interv)
+    setInterv(setInterval(run, 10))
+  }
+
   return (
     <div className="main-section">
       <div className="clock-holder">
         <div className="stopwatch">
           <DisplayComponent time={time} />
-          <BtnComponent start={start} />
+          <BtnComponent status={status} start={start} />
         </div>
       </div>
     </div>

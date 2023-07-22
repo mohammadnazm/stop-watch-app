@@ -16,7 +16,7 @@ function BtnComponent(props) {
       )}
       {props.status === 1 ? (
         <div>
-          <button class="stopwatch-btn stopwatch-btn-red" onClick={props.start}>
+          <button class="stopwatch-btn stopwatch-btn-red" onClick={props.stop}>
             Stop
           </button>
           <button class="stopwatch-btn stopwatch-btn-yel" onClick={props.start}>
