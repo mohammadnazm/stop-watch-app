@@ -12,6 +12,21 @@ function App() {
     updateM = time.m,
     updateH = time.h
 
+  const run = () => {
+    if (updateM === 60) {
+      updateH++
+      updateM = 0
+    }
+    if (updateS === 60) {
+      updateM++
+      updateS = 0
+    }
+    if (updateMs === 100) {
+      updateS++
+      updateMs = 0
+    }
+  }
+
   return (
     <div className="main-section">
       <div className="clock-holder">
