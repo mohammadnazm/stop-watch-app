@@ -1,7 +1,6 @@
 import React from "react"
 
 function BtnComponent(props) {
-  console.log("props=", props)
   return (
     <div>
       {props.status === 0 ? (
@@ -21,6 +20,24 @@ function BtnComponent(props) {
             onClick={props.stop}
           >
             Stop
+          </button>
+          <button
+            className="stopwatch-btn stopwatch-btn-yel"
+            onClick={props.start}
+          >
+            Reset
+          </button>
+        </div>
+      ) : (
+        ""
+      )}
+      {props.status === 2 ? (
+        <div>
+          <button
+            className="stopwatch-btn stopwatch-btn-gre"
+            onClick={props.resume}
+          >
+            Resume
           </button>
           <button
             className="stopwatch-btn stopwatch-btn-yel"
