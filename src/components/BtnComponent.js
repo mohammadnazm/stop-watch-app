@@ -1,7 +1,11 @@
 import React from "react"
 
-function BtnComponent() {
-  return <div className="stopwatch-btn stopwatch-btn-gre">Start</div>
+function BtnComponent(props) {
+  return (
+    <div className="stopwatch-btn stopwatch-btn-gre" onClick={props.start}>
+      Start
+    </div>
+  )
 }
 
 export default BtnComponent
