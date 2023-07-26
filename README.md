@@ -1,8 +1,8 @@
-# Stop watch app
+# Stop Watch App
 
 A minimalist React.js-based stopwatch web app to accurately track time for different tasks and activities.
 
-![media io_CVSLWsMn](https://github.com/mohammadnazm/stop-watch-app/assets/63538356/9d30533d-f829-4a7f-84be-e4f593c7ece4)
+![ezgif com-gif-maker (2)](https://github.com/mohammadnazm/stop-watch-app/assets/63538356/1a59d59c-3f4b-4244-9408-952890bd1f08)
 
 
 ## Installation
